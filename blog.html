@@ -366,7 +366,26 @@ h5,h6{font-size:1em;}
             <div class="ui center aligned basic segment">
                 <button id="payButton" class="ui button circular orange">打赏</button>
             </div>
-            <div class="ui payQR popup flowing transition hidden">
+            <div class="ui flowing popup top left transition hidden">
+                <div class="ui two column divided center aligned grid">
+                    <div class="column">
+                        <div class="image">
+                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
+                            <div>微信打赏</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image">
+                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
+                            <div>支付宝打赏</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="ui center aligned basic segment">
+                <button id="payButton" class="ui button circular orange">打赏</button>
+            </div>-->
+            <!--<div class="ui payQR flowing transition">
                 <div class="ui orange basic label">
                     <div class="ui images"style="font-size: inherit">
                         <div class="image">
@@ -379,7 +398,7 @@ h5,h6{font-size:1em;}
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!--博客信息-->
         <div class="ui message positive attached">
@@ -543,17 +562,16 @@ h5,h6{font-size:1em;}
         </div>
     </footer>
     <script src="static/Semantic-UI/semantic.min.js"></script>
-    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
     <script>
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide');
         });
-
-        $('#payButton').popup({
-            popup : $('.payQR.popup'),
+        /*$('#payButton').popup({
+           popup : $(".popup.payQR"),
             on : 'click',
             position : 'bottom center'
-        });
+        });*/
     </script>
 </body>
 </html>
