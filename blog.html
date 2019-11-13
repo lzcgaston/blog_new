@@ -362,43 +362,25 @@ h5,h6{font-size:1em;}
             <div class="m-padded-lr">
                 <div class="ui basic label olive left pointing">框架总结</div>
             </div>
-            <!--打赏-->
             <div class="ui center aligned basic segment">
-                <button id="payButton" class="ui button circular orange">打赏</button>
+                <button id="payButton" class="ui button circular orange">点击打赏</button>
             </div>
-            <div class="ui flowing popup top left transition hidden">
-                <div class="ui two column divided center aligned grid">
-                    <div class="column">
+            <div class="ui center aligned basic segment payQR m-image-hide">
+                <div class="ui orange basic up pointing label">
+                    <div class="ui images" style="font-size: inherit">
                         <div class="image">
-                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
+                            <img src="./static/image/WeChatPay.png" alt="" class="ui rounded bordered image"
+                                 style="width: 120px">
                             <div>微信打赏</div>
                         </div>
-                    </div>
-                    <div class="column">
                         <div class="image">
-                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
+                            <img src="./static/image/AliPay.png" alt="" class="ui rounded bordered image"
+                                 style="width: 120px">
                             <div>支付宝打赏</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--<div class="ui center aligned basic segment">
-                <button id="payButton" class="ui button circular orange">打赏</button>
-            </div>-->
-            <!--<div class="ui payQR flowing transition">
-                <div class="ui orange basic label">
-                    <div class="ui images"style="font-size: inherit">
-                        <div class="image">
-                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
-                            <div>微信打赏</div>
-                        </div>
-                        <div class="image">
-                            <img src="./static/image/WeChat.jpg" alt="" class="ui rounded bordered image" style="width: 110px">
-                            <div>支付宝打赏</div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </div>
         <!--博客信息-->
         <div class="ui message positive attached">
@@ -523,55 +505,53 @@ h5,h6{font-size:1em;}
     </div>
 </div>
 
-    <!--底部部分-->
-    <footer class="ui vertical segment m-padded-tb-massive">
-        <div class="ui center aligned container">
-            <div class="ui  section divider"></div>
-            <div class="ui divided grid stackable">
-                <div class="three wide column">
-                    <div class="ui  link list">
-                        <div class="item">
-                            <img src="static/image/WeChat.jpg" alt="" class="ui rounded image m-padded-tb-mini"
-                                 style="width: 100px">
-                        </div>
+<!--底部部分-->
+<footer class="ui vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui  section divider"></div>
+        <div class="ui divided grid stackable">
+            <div class="three wide column">
+                <div class="ui  link list">
+                    <div class="item">
+                        <img src="static/image/WeChat.jpg" alt="" class="ui rounded image m-padded-tb-mini"
+                             style="width: 100px">
                     </div>
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui  header">最新播报</h4>
-                    <div class="ui  link list">
-                        <a href="#" class="item">spring...</a>
-                        <a href="#" class="item">spring...</a>
-                        <a href="#" class="item">spring...</a>
-                    </div>
-                </div>
-                <div class="five wide column">
-                    <h4 class="ui  header">联系我</h4>
-                    <div class="ui  link list">
-                        <a href="#" class="item"><i class="qq icon"></i>499402143</a>
-                        <a href="#" class="item"><i class="mail icon"></i>liuzicheng124@hotmail.com</a>
-                    </div>
-                </div>
-                <div class="five wide column">
-                    <h4 class="ui  header">MyMoment</h4>
-                    <p class="m-text-middle">
-                        这是一个分享技术栈的个人平台,我会把自己一些关于Java相关的技术和想法分享到这里,如果您感兴趣的话可以和我多多交流,有什么建议或想法欢迎发到我的个人邮箱...</p>
                 </div>
             </div>
-            <div class="ui  section divider"></div>
-            <p class="m-text-thin m-text-lined m-text-spaced"> Copyright © 2018-2019 MyMoment Designd by Gaston </p>
+            <div class="three wide column">
+                <h4 class="ui  header">最新播报</h4>
+                <div class="ui  link list">
+                    <a href="#" class="item">spring...</a>
+                    <a href="#" class="item">spring...</a>
+                    <a href="#" class="item">spring...</a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui  header">联系我</h4>
+                <div class="ui  link list">
+                    <a href="#" class="item"><i class="qq icon"></i>499402143</a>
+                    <a href="#" class="item"><i class="mail icon"></i>liuzicheng124@hotmail.com</a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui  header">MyMoment</h4>
+                <p class="m-text-middle">
+                    这是一个分享技术栈的个人平台,我会把自己一些关于Java相关的技术和想法分享到这里,如果您感兴趣的话可以和我多多交流,有什么建议或想法欢迎发到我的个人邮箱...</p>
+            </div>
         </div>
-    </footer>
-    <script src="static/Semantic-UI/semantic.min.js"></script>
-    <script src="static/js/jquery-3.4.1.min.js"></script>
-    <script>
-        $('.menu.toggle').click(function () {
-            $('.m-item').toggleClass('m-mobile-hide');
-        });
-        /*$('#payButton').popup({
-           popup : $(".popup.payQR"),
-            on : 'click',
-            position : 'bottom center'
-        });*/
-    </script>
+        <div class="ui  section divider"></div>
+        <p class="m-text-thin m-text-lined m-text-spaced"> Copyright © 2018-2019 MyMoment Designd by Gaston </p>
+    </div>
+</footer>
+<script src="static/Semantic-UI/semantic.min.js"></script>
+<script src="static/js/jquery-3.4.1.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('#payButton').click(function () {
+        $(".payQR").toggleClass("m-image-hide")
+    });
+</script>
 </body>
 </html>

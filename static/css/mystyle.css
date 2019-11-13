@@ -103,3 +103,6 @@ body{
         display: block !important;
     }
 }
+.m-image-hide{
+    display: none !important;
+}
